@@ -45,7 +45,7 @@ def train_img_path(id_str):
 
 ### Exploratory Data Analysis
 
-We explore a sample image and display a few examples of both cancerous and non-cancerous images.
+Exploring a sample image and display a few examples of both cancerous and non-cancerous images.
 
 ```python
 example_path = "/kaggle/input/histopathologic-cancer-detection/train/f38a6374c348f90b587e046aac6079959adf3835.tif"
@@ -185,8 +185,7 @@ Oversampling is a technique used to address class imbalance by increasing the nu
 
 ## 5. Model Design
 
-We designed a custom ResNet50 model, leveraging the strengths of residual networks to address the image classification task.
-We also experimented with EfficientNetB0, Xception and Densenet121 to compare performance.
+Designed a custom ResNet50 model, leveraging the strengths of residual networks to address the image classification task. Also experimented with EfficientNetB0, Xception and Densenet121 to compare performance.
 
 ### Custom ResNet50 Implementation
 
@@ -286,7 +285,7 @@ def f1_score(y_true, y_pred):
     return 2*((precision*recall)/(precision+recall+K.epsilon()))
 ```
 
-We train the models using the Adam optimizer and binary cross-entropy loss.
+training the models using the Adam optimizer and binary cross-entropy loss.
 
 ```python
 model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
