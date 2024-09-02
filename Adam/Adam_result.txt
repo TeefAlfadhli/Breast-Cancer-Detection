@@ -1,0 +1,222 @@
+Dataset: We have 220,025 images in the train data set with 2 unique labels. 0 for not cancerous and 1 for cancerous tissues.
+
+Label 0 = 130908 Images.
+Label 1 = 89117 Images.
+
+All models Trained in same parameters:
+
+------------------------------------------------------------------------------------------------
+1 - Without Oversampling.
+------------------------------------------------------------------------------------------------
+LR = 0.001
+Optimizer = Adam
+Loss = BinaryCrossentropy
+Metrics = Accuracy, AUC, f1_score
+Epochs = 10
+--------------------------------------------
+Models:
+-------
+1 - ResNet50.
+	Loss: 0.1041
+	Accuracy: 96.07%
+	AUC: 96.58%
+	F1-score: 94.86%
+	Validation Loss: 0.1495
+	Validation Accuracy: 94.60%
+	Validation AUC: 94.81%
+	Validation F1-score: 92.88%
+
+2 - EfficientNetB0.
+	Loss: 0.0656
+	Accuracy: 97.79%
+	AUC: 99.63%
+	F1-score: 97.16%
+	Validation Loss: 0.1149
+	Validation Accuracy: 96.06%
+	Validation AUC: 99.15%
+	Validation F1-score: 95.03%
+
+3 - Xception.
+	Loss: 0.0420
+	Accuracy: 98.52%
+	AUC: 99.83%
+	F1-score: 98.08%
+	Validation Loss: 0.1584
+	Validation Accuracy: 95.21%
+	Validation AUC: 98.63%
+	Validation F1-score: 93.59%
+
+4 - DenseNet121.
+	Loss: 0.0854
+	Accuracy: 97.21%
+	AUC: 99.42%
+	F1-score: 96.4%
+	Validation Loss: 0.2042
+	Validation Accuracy: 93.61%
+	Validation AUC: 97.95%
+	Validation F1-score: 91.34%
+
+
+------------------------------------------------------------------------------------------------
+LR = 0.0001
+Optimizer = Adam
+Loss = BinaryCrossentropy
+Metrics = Accuracy, AUC, f1_score
+Epochs = 10
+--------------------------------------------
+Models:
+-------
+1 - ResNet50.
+	Loss: 0.0712
+	Accuracy: 97.35%
+	AUC: 97.71%
+	F1-score: 96.85%
+	Validation Loss: 0.1687
+	Validation Accuracy: 94.50%
+	Validation AUC: 95.04%
+	Validation F1-score: 92.89%
+
+2 - EfficientNetB0.
+	Loss: 0.0373
+	Accuracy: 98.80%
+	AUC: 99.85%
+	F1-score: 98.45%
+	Validation Loss: 0.1118
+	Validation Accuracy: 96.96%
+	Validation AUC: 99.00%
+	Validation F1-score: 96.04%
+
+3 - Xception.
+	Loss: 0.0165
+	Accuracy: 99.44%
+	AUC: 99.95%
+	F1-score: 99.28%
+	Validation Loss: 0.1565
+	Validation Accuracy: 96.61%
+	Validation AUC: 98.77%
+	Validation F1-score: 95.69%
+
+4 - DenseNet121.
+	Loss: 0.0344
+	Accuracy: 98.92%
+	AUC: 99.87%
+	F1-score: 98.60%
+	Validation Loss: 0.1151
+	Validation Accuracy: 96.57%
+	Validation AUC: 99.13%
+	Validation F1-score: 95.69%
+
+
+
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+
+2 - With Oversampling.
+------------------------------------------------------------------------------------------------
+LR = 0.001
+Optimizer = Adam
+Loss = BinaryCrossentropy
+Metrics = Accuracy, AUC, f1_score
+Epochs = 10
+--------------------------------------------
+Models:
+-------
+1 - ResNet50.
+	Loss: 0.0887
+	Accuracy: 96.68%
+	AUC: 97.44%
+	F1-score: 96.55%
+	Validation Loss: 0.1178
+	Validation Accuracy: 95.86%
+	Validation AUC: 96.63%
+	Validation F1-score: 95.72%
+
+2 - EfficientNetB0.
+	Loss: 0.0540
+	Accuracy: 98.20%
+	AUC: 99.75%
+	F1-score: 98.12%
+	Validation Loss: 0.0774
+	Validation Accuracy: 97.43%
+	Validation AUC: 99.53%
+	Validation F1-score: 97.36%
+
+
+3 - Xception.
+	Loss: 0.0311
+	Accuracy: 98.92%
+	AUC: 99.90%
+	F1-score: 98.87%
+	Validation Loss: 0.1980
+	Validation Accuracy: 97.06%
+	Validation AUC: 99.25%
+	Validation F1-score: 96.99%
+
+
+4 - DenseNet121.
+	Loss: 0.0658
+	Accuracy: 97.82%
+	AUC: 99.64%
+	F1-score: 97.74%
+	Validation Loss: 0.4114
+	Validation Accuracy: 89.01%
+	Validation AUC: 95.90%
+	Validation F1-score: 87.55%
+
+
+------------------------------------------------------------------------------------------------
+LR = 0.0001
+Optimizer = Adam
+Loss = BinaryCrossentropy
+Metrics = Accuracy, AUC, f1_score
+Epochs = 10
+--------------------------------------------
+Models:
+-------
+1 - Resnet50.
+	Loss: 0.0537
+	Accuracy: 98.01%
+	AUC: 98.46%
+	F1-score: 97.92%
+	Validation Loss: 0.1219
+	Validation Accuracy: 96.17%
+	Validation AUC: 96.78%
+	Validation F1-score: 96.07%
+
+2 - EfficientNetB0.
+	Loss: 0.0298
+	Accuracy: 99.06%
+	AUC: 99.89%
+	F1-score: 99.03%
+	Validation Loss: 0.0824
+	Validation Accuracy: 97.88%
+	Validation AUC: 99.40%
+	Validation F1-score: 97.85%
+
+
+
+3 - Xception.
+	Loss: 0.0143
+	Accuracy: 99.54%
+	AUC: 99.96%
+	F1-score: 99.52%
+	Validation Loss: 0.0810
+	Validation Accuracy: 98.14%
+	Validation AUC: 99.45%
+	Validation F1-score: 98.07%
+
+
+
+4 - DenseNet121.
+	Loss: 0.0259
+	Accuracy: 99.21%
+	AUC: 99.91%
+	F1-score: 99.17%
+	Validation Loss: 0.0896
+	Validation Accuracy: 97.64%
+	Validation AUC: 99.37%
+	Validation F1-score: 97.52%
+
